@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PATRIK — Премиальная одежда и аксессуары | Осень 2026</title>
+  <meta name="description" content="Официальный интернет-магазин бренда PATRIK. Новая осенняя коллекция 2026: пальто, кашемир, обувь и аксессуары. Бесплатная доставка от 5000 ₽.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar__inner">
+      <span class="top-bar__text">✨ <strong>БЕСПЛАТНАЯ ДОСТАВКА</strong> ПРИ ЗАКАЗЕ ОТ 5 000 ₽ ПО ВСЕЙ РОССИИ</span>
+      <div class="top-bar__links">
+        <a href="#about">О бренде</a>
+        <a href="#stores">Магазины</a>
+        <a href="tel:88002002020">8 800 200-20-20</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <!-- Mobile Menu Button -->
+      <button class="icon-btn mobile-menu-btn" id="mobileMenuBtn" aria-label="Открыть меню">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <!-- Brand Logo -->
+      <a href="#" class="header__logo">
+        <span class="logo-text">PATRIK</span><span class="logo-dot">.</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav" id="mainNav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#new" class="nav__link">НОВИНКИ</a></li>
+          <li class="nav__item"><a href="#catalog" class="nav__link">КАТАЛОГ</a></li>
+          <li class="nav__item"><a href="#trends" class="nav__link">ТРЕНДЫ</a></li>
+          <li class="nav__item"><a href="#sale" class="nav__link nav__link--sale">SALE <span class="badge badge--sale">-40%</span></a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Icons -->
+      <div class="header__actions">
+        <button class="action-btn" id="searchTrigger" title="Поиск (Ctrl+K)">
+          <i data-lucide="search"></i>
+          <span class="action-btn__label">Поиск</span>
+        </button>
+        <button class="action-btn" id="wishlistTrigger" title="Избранное">
+          <i data-lucide="heart"></i>
+          <span class="action-badge" id="wishlistCount">0</span>
+        </button>
+        <button class="action-btn action-btn--cart" id="cartTrigger" title="Корзина">
+          <i data-lucide="shopping-bag"></i>
+          <span class="action-badge" id="cartCount">0</span>
+          <span class="cart-total-preview" id="cartTotalPreview">0 ₽</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer__header">
+      <div class="header__logo">PATRIK<span class="logo-dot">.</span></div>
+      <button class="icon-btn close-btn" id="closeMobileDrawer">&times;</button>
+    </div>
+    <div class="mobile-drawer__content">
+      <ul class="mobile-nav__list">
+        <li><a href="#new" class="mobile-nav__link">🔥 Новинки</a></li>
+        <li><a href="#catalog" class="mobile-nav__link">🧥 Каталог</a></li>
+        <li><a href="#trends" class="mobile-nav__link">✨ Тренды & Лукбук</a></li>
+        <li><a href="#sale" class="mobile-nav__link mobile-nav__link--sale">🏷️ Распродажа до -40%</a></li>
+        <li><a href="#features" class="mobile-nav__link">📦 Доставка и возврат</a></li>
+      </ul>
+      <div class="mobile-drawer__footer">
+        <p class="contacts-phone">8 800 200-20-20</p>
+        <p class="contacts-time">Ежедневно 09:00 - 21:00</p>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+      <div class="hero__bg-wrapper">
+        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1920&auto=format&fit=crop" 
+             alt="PATRIK Осень 2026" 
+             class="hero__bg-img">
+        <div class="hero__overlay"></div>
+      </div>
+      
+      <div class="container hero__content">
+        <div class="hero__badge">
+          <span class="badge-dot"></span> ЖЕНСКАЯ И МУЖСКАЯ ЛИНИЯ
+        </div>
+        <h1 class="hero__title">
+          Новая коллекция<br>
+          <span class="hero__title-accent">осень 2026</span>
+        </h1>
+        <p class="hero__subtitle">
+          Чистые линии, премиальные ткани и безупречный архитектурный крой в каждом элементе гардероба.
+        </p>
+        <div class="hero__actions">
+          <a href="#catalog" class="btn btn--primary btn--lg">
+            <span>Смотреть каталог</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+          <a href="#sale" class="btn btn--outline-light btn--lg">
+            <span>Сезонный SALE</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Scroll Indicator -->
+      <a href="#categories" class="hero__scroll-down" aria-label="Прокрутить вниз">
+        <span>Листайте вниз</span>
+        <i data-lucide="chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- POPULAR CATEGORIES SECTION -->
+    <section class="section categories-section" id="categories">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-tag">РАЗДЕЛЫ</span>
+            <h2 class="section-title">Популярные категории</h2>
+          </div>
+          <a href="#catalog" class="view-all-link">
+            <span>Все категории</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+
+        <div class="categories-grid">
+          <!-- Category 1: Одежда -->
+          <div class="category-card" data-category="clothing">
+            <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?q=80&w=800&auto=format&fit=crop" 
+                 alt="Одежда PATRIK" class="category-card__img">
+            <div class="category-card__content">
+              <span class="category-card__tag">120+ МОДЕЛЕЙ</span>
+              <h3 class="category-card__title">Одежда</h3>
+              <p class="category-card__desc">Пальто, трикотаж, жакеты и брюки</p>
+              <div class="category-card__arrow">
+                <i data-lucide="arrow-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Обувь -->
+          <div class="category-card" data-category="shoes">
+            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=800&auto=format&fit=crop" 
+                 alt="Обувь PATRIK" class="category-card__img">
+            <div class="category-card__content">
+              <span class="category-card__tag">64 МОДЕЛИ</span>
+              <h3 class="category-card__title">Обувь</h3>
+              <p class="category-card__desc">Ботильоны, кожаные кеды, челси</p>
+              <div class="category-card__arrow">
+                <i data-lucide="arrow-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Аксессуары -->
+          <div class="category-card" data-category="accessories">
+            <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?q=80&w=800&auto=format&fit=crop" 
+                 alt="Аксессуары PATRIK" class="category-card__img">
+            <div class="category-card__content">
+              <span class="category-card__tag">45 МОДЕЛЕЙ</span>
+              <h3 class="category-card__title">Аксессуары</h3>
+              <p class="category-card__desc">Кожаные сумки, очки, ремни и шарфы</p>
+              <div class="category-card__arrow">
+                <i data-lucide="arrow-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Электроника & Гаджеты -->
+          <div class="category-card" data-category="tech">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop" 
+                 alt="Электроника PATRIK" class="category-card__img">
+            <div class="category-card__content">
+              <span class="category-card__tag">НОВАЯ ЛИНИЯ</span>
+              <h3 class="category-card__title">Электроника</h3>
+              <p class="category-card__desc">Премиум акустика, часы, смарт-аксессуары</p>
+              <div class="category-card__arrow">
+                <i data-lucide="arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEST SELLERS / HITS SECTION -->
+    <section class="section hits-section" id="catalog">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-tag">БЕСТСЕЛЛЕРЫ</span>
+            <h2 class="section-title">Хиты продаж</h2>
+          </div>
+          <!-- Filter Tabs -->
+          <div class="filter-tabs" id="catalogFilterTabs">
+            <button class="filter-tab active" data-filter="all">Все товары</button>
+            <button class="filter-tab" data-filter="clothing">Одежда</button>
+            <button class="filter-tab" data-filter="shoes">Обувь</button>
+            <button class="filter-tab" data-filter="accessories">Аксессуары</button>
+            <button class="filter-tab" data-filter="sale">Только скидки</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Product Grid -->
+        <div class="products-grid" id="hitsGrid">
+          <!-- Filled dynamically via JS with Figma products -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMO BANNER: SEASON SALE -40% -->
+    <section class="promo-banner" id="sale">
+      <div class="container">
+        <div class="promo-banner__card">
+          <div class="promo-banner__image-side">
+            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=1000&auto=format&fit=crop" 
+                 alt="Сезонная распродажа PATRIK" 
+                 class="promo-banner__img">
+            <div class="promo-badge-float">-40%</div>
+          </div>
+          <div class="promo-banner__content">
+            <span class="promo-tag">ЭКСКЛЮЗИВНОЕ ПРЕДЛОЖЕНИЕ</span>
+            <h2 class="promo-title">
+              Сезонная распродажа<br>
+              <span class="promo-title--accent">до -40%</span>
+            </h2>
+            <p class="promo-desc">
+              Одежда и обувь для ваших идеальных осенних образов. Обновите базовый гардероб культовыми вещами из премиальных итальянских тканей по специальным ценам.
+            </p>
+
+            <!-- Interactive Live Countdown -->
+            <div class="countdown-wrapper">
+              <span class="countdown-label">ДО ОКОНЧАНИЯ АКЦИИ:</span>
+              <div class="countdown" id="saleCountdown">
+                <div class="countdown-item">
+                  <span class="countdown-value" id="countDays">03</span>
+                  <span class="countdown-unit">дня</span>
+                </div>
+                <div class="countdown-sep">:</div>
+                <div class="countdown-item">
+                  <span class="countdown-value" id="countHours">14</span>
+                  <span class="countdown-unit">часов</span>
+                </div>
+                <div class="countdown-sep">:</div>
+                <div class="countdown-item">
+                  <span class="countdown-value" id="countMinutes">38</span>
+                  <span class="countdown-unit">мин</span>
+                </div>
+                <div class="countdown-sep">:</div>
+                <div class="countdown-item">
+                  <span class="countdown-value" id="countSeconds">45</span>
+                  <span class="countdown-unit">сек</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="promo-actions">
+              <button class="btn btn--white btn--lg" id="promoSaleBtn">
+                <span>ПЕРЕЙТИ В SALE</span>
+                <i data-lucide="arrow-right"></i>
+              </button>
+              <div class="promo-code-pill" id="copyPromoBtn" title="Нажмите, чтобы скопировать">
+                <span>Промокод: <strong>AUTUMN40</strong></span>
+                <i data-lucide="copy"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW ARRIVALS SECTION -->
+    <section class="section new-arrivals-section" id="new">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-tag">НОВАЯ КОЛЛЕКЦИЯ</span>
+            <h2 class="section-title">Новые поступления</h2>
+          </div>
+          <button class="btn btn--outline" id="loadMoreNewBtn">
+            <span>Смотреть все новинки</span>
+            <i data-lucide="arrow-right"></i>
+          </button>
+        </div>
+
+        <div class="products-grid" id="newArrivalsGrid">
+          <!-- Filled dynamically via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUE PROPOSITIONS / TRUST BANNER -->
+    <section class="section features-section" id="features">
+      <div class="container">
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <i data-lucide="truck"></i>
+            </div>
+            <div class="feature-card__info">
+              <h4 class="feature-card__title">Бесплатная доставка</h4>
+              <p class="feature-card__text">При заказе от 5 000 ₽ курьером до двери или в ПВЗ</p>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <i data-lucide="shield-check"></i>
+            </div>
+            <div class="feature-card__info">
+              <h4 class="feature-card__title">Гарантия качества</h4>
+              <p class="feature-card__text">Только оригинальные премиальные материалы и пошив</p>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <i data-lucide="refresh-cw"></i>
+            </div>
+            <div class="feature-card__info">
+              <h4 class="feature-card__title">Возврат 14 дней</h4>
+              <p class="feature-card__text">Примерка перед покупкой и возврат без лишних вопросов</p>
+            </div>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <i data-lucide="headphones"></i>
+            </div>
+            <div class="feature-card__info">
+              <h4 class="feature-card__title">Онлайн-консультант</h4>
+              <p class="feature-card__text">Помощь стилиста в подборе размера и образа 24/7</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER SUBSCRIPTION -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-card">
+          <div class="newsletter-content">
+            <span class="newsletter-tag">КЛУБ ПРИВИЛЕГИЙ PATRIK</span>
+            <h3 class="newsletter-title">Скидка 10% на первый заказ</h3>
+            <p class="newsletter-subtitle">Подпишитесь на закрытые релизы новых коллекций, персональные предложения и приглашения на закрытые распродажи.</p>
+          </div>
+          <form class="newsletter-form" id="newsletterForm">
+            <div class="newsletter-input-group">
+              <input type="email" class="newsletter-input" placeholder="Введите ваш e-mail" required id="newsletterEmail">
+              <button type="submit" class="btn btn--primary newsletter-submit">
+                <span>Подписаться</span>
+                <i data-lucide="send"></i>
+              </button>
+            </div>
+            <span class="newsletter-privacy">Нажимая кнопку, вы соглашаетесь с условиями политики конфиденциальности.</span>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="about">
+    <div class="container">
+      <div class="footer__main">
+        <!-- Col 1: Brand Info -->
+        <div class="footer__col footer__col--brand">
+          <a href="#" class="footer__logo">PATRIK<span class="logo-dot">.</span></a>
+          <p class="footer__about">
+            Премиальный бренд одежды, обуви и аксессуаров. Вневременной минимализм, благородные фактуры и безупречный комфорт в каждой детали.
+          </p>
+          <div class="footer__socials">
+            <a href="https://t.me" target="_blank" class="social-link" title="Telegram"><i data-lucide="send"></i></a>
+            <a href="https://vk.com" target="_blank" class="social-link" title="VKontakte"><i data-lucide="globe"></i></a>
+            <a href="https://instagram.com" target="_blank" class="social-link" title="Instagram"><i data-lucide="instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" class="social-link" title="YouTube"><i data-lucide="youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Компания -->
+        <div class="footer__col">
+          <h4 class="footer__heading">О КОМПАНИИ</h4>
+          <ul class="footer__links">
+            <li><a href="#about">О бренде</a></li>
+            <li><a href="#catalog">Лукбук 2026</a></li>
+            <li><a href="#stores">Магазины</a></li>
+            <li><a href="#careers">Карьера в PATRIK</a></li>
+            <li><a href="#sustainability">Устойчивое развитие</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Покупателям -->
+        <div class="footer__col">
+          <h4 class="footer__heading">ПОКУПАТЕЛЯМ</h4>
+          <ul class="footer__links">
+            <li><a href="#features">Доставка и оплата</a></li>
+            <li><a href="#features">Возврат и обмен</a></li>
+            <li><a href="#size-guide" id="sizeGuideLink">Таблица размеров</a></li>
+            <li><a href="#faq">Частые вопросы (FAQ)</a></li>
+            <li><a href="#loyalty">Программа лояльности</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Контакты -->
+        <div class="footer__col footer__col--contacts" id="stores">
+          <h4 class="footer__heading">КОНТАКТЫ</h4>
+          <div class="contact-item">
+            <span class="contact-label">Горячая линия:</span>
+            <a href="tel:88002002020" class="contact-value highlight">8 800 200-20-20</a>
+            <span class="contact-sub">Бесплатно по всей России</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Клиентская служба:</span>
+            <a href="mailto:concierge@patrik.store" class="contact-value">concierge@patrik.store</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Флагманский бутик:</span>
+            <span class="contact-value">Москва, ул. Петровка, 12</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 PATRIK. Все права защищены.</p>
+        <div class="footer__legal">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Публичная оферта</a>
+          <a href="#">Пользовательское соглашение</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= MODALS & DRAWERS ================= -->
+
+  <!-- 1. CART SLIDE-OVER DRAWER -->
+  <div class="drawer-overlay" id="cartOverlay">
+    <div class="drawer drawer--cart" id="cartDrawer">
+      <div class="drawer__header">
+        <div class="drawer__title-wrap">
+          <i data-lucide="shopping-bag"></i>
+          <h3 class="drawer__title">Ваша корзина (<span id="cartDrawerCount">0</span>)</h3>
+        </div>
+        <button class="icon-btn close-btn" id="closeCartBtn">&times;</button>
+      </div>
+
+      <!-- Free Shipping Tracker -->
+      <div class="shipping-tracker">
+        <div class="shipping-tracker__text" id="shippingTrackerText">
+          Добавьте товаров на <strong>5 000 ₽</strong> для бесплатной доставки!
+        </div>
+        <div class="shipping-tracker__bar">
+          <div class="shipping-tracker__progress" id="shippingTrackerProgress" style="width: 0%;"></div>
+        </div>
+      </div>
+
+      <!-- Cart Items List -->
+      <div class="drawer__body" id="cartItemsList">
+        <!-- Rendered by JS -->
+      </div>
+
+      <!-- Cart Footer -->
+      <div class="drawer__footer">
+        <!-- Promo Code Input -->
+        <div class="promo-input-group">
+          <input type="text" id="cartPromoInput" placeholder="Промокод (AUTUMN40, PATRIK10)">
+          <button class="btn btn--sm btn--outline" id="applyPromoBtn">Применить</button>
+        </div>
+        <div class="promo-applied-msg" id="promoAppliedMsg"></div>
+
+        <div class="cart-summary">
+          <div class="cart-summary__row">
+            <span>Сумма товаров:</span>
+            <span id="cartSubtotal">0 ₽</span>
+          </div>
+          <div class="cart-summary__row cart-summary__row--discount" id="cartDiscountRow" style="display: none;">
+            <span>Скидка по промокоду:</span>
+            <span id="cartDiscountValue">-0 ₽</span>
+          </div>
+          <div class="cart-summary__row">
+            <span>Доставка:</span>
+            <span id="cartShippingValue">Бесплатно</span>
+          </div>
+          <div class="cart-summary__row cart-summary__row--total">
+            <span>Итого к оплате:</span>
+            <span id="cartGrandTotal">0 ₽</span>
+          </div>
+        </div>
+
+        <button class="btn btn--primary btn--block btn--lg" id="checkoutBtn">
+          <span>Перейти к оформлению</span>
+          <i data-lucide="arrow-right"></i>
+        </button>
+        <button class="btn btn--link btn--block" id="clearCartBtn">Очистить корзину</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. WISHLIST SLIDE-OVER DRAWER -->
+  <div class="drawer-overlay" id="wishlistOverlay">
+    <div class="drawer drawer--wishlist" id="wishlistDrawer">
+      <div class="drawer__header">
+        <div class="drawer__title-wrap">
+          <i data-lucide="heart"></i>
+          <h3 class="drawer__title">Избранное (<span id="wishlistDrawerCount">0</span>)</h3>
+        </div>
+        <button class="icon-btn close-btn" id="closeWishlistBtn">&times;</button>
+      </div>
+      <div class="drawer__body" id="wishlistItemsList">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. LIVE SEARCH MODAL -->
+  <div class="modal-overlay" id="searchModal">
+    <div class="modal modal--search">
+      <div class="search-modal__header">
+        <i data-lucide="search" class="search-modal__icon"></i>
+        <input type="text" id="searchInput" placeholder="Поиск по каталогу (пальто, кашемир, кеды, очки...)" autofocus>
+        <button class="icon-btn close-btn" id="closeSearchModal">&times;</button>
+      </div>
+      <div class="search-modal__tags">
+        <span class="search-tag-label">Часто ищут:</span>
+        <button class="search-tag-btn" data-query="пальто">Пальто</button>
+        <button class="search-tag-btn" data-query="кашемир">Кашемир</button>
+        <button class="search-tag-btn" data-query="ботильоны">Ботильоны</button>
+        <button class="search-tag-btn" data-query="сумка">Сумка</button>
+        <button class="search-tag-btn" data-query="очки">Очки</button>
+      </div>
+      <div class="search-modal__results" id="searchResults">
+        <p class="search-placeholder">Введите название вещи или категории для быстрого поиска...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. QUICK VIEW PRODUCT MODAL -->
+  <div class="modal-overlay" id="quickViewModal">
+    <div class="modal modal--quick-view">
+      <button class="icon-btn close-btn modal-close-pos" id="closeQuickViewModal">&times;</button>
+      <div class="quick-view__grid" id="quickViewContent">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. CHECKOUT ORDER MODAL -->
+  <div class="modal-overlay" id="checkoutModal">
+    <div class="modal modal--checkout">
+      <button class="icon-btn close-btn modal-close-pos" id="closeCheckoutModal">&times;</button>
+      <div class="checkout__container">
+        <h2 class="checkout__title">Оформление заказа</h2>
+        <form class="checkout__form" id="checkoutOrderForm">
+          <!-- Step 1: Contacts -->
+          <div class="checkout__section">
+            <h4 class="checkout__section-title">1. Контактные данные</h4>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="checkoutName">Имя и Фамилия *</label>
+                <input type="text" id="checkoutName" required placeholder="Константин Патриков">
+              </div>
+              <div class="form-group">
+                <label for="checkoutPhone">Телефон *</label>
+                <input type="tel" id="checkoutPhone" required placeholder="+7 (999) 000-00-00">
+              </div>
+              <div class="form-group form-group--full">
+                <label for="checkoutOrderEmail">Электронная почта *</label>
+                <input type="email" id="checkoutOrderEmail" required placeholder="order@patrik.store">
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Delivery -->
+          <div class="checkout__section">
+            <h4 class="checkout__section-title">2. Доставка</h4>
+            <div class="delivery-options">
+              <label class="radio-card active">
+                <input type="radio" name="deliveryMethod" value="courier" checked>
+                <div class="radio-card__content">
+                  <span class="radio-card__title">Курьерская доставка (до двери)</span>
+                  <span class="radio-card__price">Бесплатно при заказе от 5 000 ₽</span>
+                </div>
+              </label>
+              <label class="radio-card">
+                <input type="radio" name="deliveryMethod" value="pickup">
+                <div class="radio-card__content">
+                  <span class="radio-card__title">Самовывоз из бутика (Москва, Петровка 12)</span>
+                  <span class="radio-card__price">Сегодня бесплатно</span>
+                </div>
+              </label>
+            </div>
+            <div class="form-group form-group--full mt-3" id="addressField">
+              <label for="checkoutAddress">Адрес доставки *</label>
+              <input type="text" id="checkoutAddress" placeholder="Город, улица, дом, квартира">
+            </div>
+          </div>
+
+          <!-- Step 3: Payment -->
+          <div class="checkout__section">
+            <h4 class="checkout__section-title">3. Способ оплаты</h4>
+            <div class="payment-methods">
+              <label class="radio-card active">
+                <input type="radio" name="paymentMethod" value="card" checked>
+                <div class="radio-card__content">
+                  <span class="radio-card__title">💳 Банковской картой онлайн (МИР, Visa, Mastercard)</span>
+                </div>
+              </label>
+              <label class="radio-card">
+                <input type="radio" name="paymentMethod" value="sbp">
+                <div class="radio-card__content">
+                  <span class="radio-card__title">⚡ СБП (Система Быстрых Платежей)</span>
+                </div>
+              </label>
+              <label class="radio-card">
+                <input type="radio" name="paymentMethod" value="dolyame">
+                <div class="radio-card__content">
+                  <span class="radio-card__title">✨ Долями (4 платежа по 25%)</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Final Button -->
+          <div class="checkout__total-bar">
+            <div class="checkout__total-info">
+              <span>Итого к оплате:</span>
+              <strong id="checkoutFinalTotal">0 ₽</strong>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg">
+              <span>Подтвердить и оплатить</span>
+              <i data-lucide="check"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. ORDER SUCCESS MODAL -->
+  <div class="modal-overlay" id="orderSuccessModal">
+    <div class="modal modal--success">
+      <div class="success-content">
+        <div class="success-icon">
+          <i data-lucide="check-circle-2"></i>
+        </div>
+        <h2 class="success-title">Заказ успешно оформлен!</h2>
+        <p class="success-order-num">Номер вашего заказа: <strong id="successOrderNum">#PATRIK-84920</strong></p>
+        <p class="success-desc">
+          Спасибо за выбор PATRIK! Мы уже бережно упаковываем ваш заказ. Информация с трек-номером и деталями отправлена на вашу почту и в SMS.
+        </p>
+        <button class="btn btn--primary btn--lg mt-4" id="closeSuccessModalBtn">
+          <span>Продолжить покупки</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATIONS CONTAINER -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
