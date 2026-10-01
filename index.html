@@ -15,7 +15,17 @@
   <script src="https://unpkg.com/lucide@latest"></script>
   
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=3.0">
+
+  <!-- Critical Inline Fallback Styles -->
+  <style>
+    .mobile-drawer, .drawer-overlay, .modal-overlay {
+      display: none;
+    }
+    .mobile-drawer.active, .drawer-overlay.active, .modal-overlay.active {
+      display: flex;
+    }
+  </style>
 </head>
 <body>
   <!-- Top Announcement Bar -->
@@ -72,26 +82,7 @@
     </div>
   </header>
 
-  <!-- Mobile Navigation Overlay Drawer -->
-  <div class="mobile-drawer" id="mobileDrawer">
-    <div class="mobile-drawer__content">
-      <div class="mobile-drawer__header">
-        <div class="header__logo">PATRIK<span class="logo-dot">.</span></div>
-        <button class="icon-btn close-btn" id="closeMobileDrawer">&times;</button>
-      </div>
-      <ul class="mobile-nav__list">
-        <li><a href="#new" class="mobile-nav__link">🔥 Новинки</a></li>
-        <li><a href="#catalog" class="mobile-nav__link">🧥 Каталог</a></li>
-        <li><a href="#trends" class="mobile-nav__link">✨ Тренды & Лукбук</a></li>
-        <li><a href="#sale" class="mobile-nav__link mobile-nav__link--sale">🏷️ Распродажа до -40%</a></li>
-        <li><a href="#features" class="mobile-nav__link">📦 Доставка и возврат</a></li>
-      </ul>
-      <div class="mobile-drawer__footer">
-        <p class="contacts-phone">8 800 200-20-20</p>
-        <p class="contacts-time">Ежедневно 09:00 - 21:00</p>
-      </div>
-    </div>
-  </div>
+
 
   <main>
     <!-- HERO SECTION -->
@@ -680,6 +671,27 @@
         <button class="btn btn--primary btn--lg mt-4" id="closeSuccessModalBtn">
           <span>Продолжить покупки</span>
         </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. MOBILE NAVIGATION OVERLAY DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer__content">
+      <div class="mobile-drawer__header">
+        <div class="header__logo">PATRIK<span class="logo-dot">.</span></div>
+        <button class="icon-btn close-btn" id="closeMobileDrawer">&times;</button>
+      </div>
+      <ul class="mobile-nav__list">
+        <li><a href="#new" class="mobile-nav__link">🔥 Новинки</a></li>
+        <li><a href="#catalog" class="mobile-nav__link">🧥 Каталог</a></li>
+        <li><a href="#trends" class="mobile-nav__link">✨ Тренды & Лукбук</a></li>
+        <li><a href="#sale" class="mobile-nav__link mobile-nav__link--sale">🏷️ Распродажа до -40%</a></li>
+        <li><a href="#features" class="mobile-nav__link">📦 Доставка и возврат</a></li>
+      </ul>
+      <div class="mobile-drawer__footer">
+        <p class="contacts-phone">8 800 200-20-20</p>
+        <p class="contacts-time">Ежедневно 09:00 - 21:00</p>
       </div>
     </div>
   </div>
